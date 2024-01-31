@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>totalform</title>
+</head>
+<body bgcolor="cyan">
+    <form action="message/message.html">
+        <marquee behavior="alternate" direction="right">\
+            
+            <h1 >student Registration Form</h1>
+        </marquee>
+        <fieldset>
+            <legend >Personal_Details </legend>
+        <label for="fname">FirstName</label>
+        <input type="text" id="fname" required placeholder="ex:Hari"pattern="[A-Za-z]{3,15}"><br><br>
+        <label for="lname">LastName</label>
+        <input type="text" id="lname" required pattern="[A-Za-z]{3,15}"><br><br>
+        <label for="uemail">Email</label>
+        <input type="email" id="uemail" required placeholder="ex:abc@gmail.com"pattern="[a-z0-9-.]+@[a-z]+.[a-z]{2,}"><br><br>
+        <label for="uemail">Re_type Email</label>
+        <input type="email" id="uemail" required><br><br>
+        <label for="phone">phoneNo</label>
+        <input type="text" id="phone" required pattern="[6-9]{1}[0-9]{9}"><br><br>
+        <label for="dob">DOB</label>
+        <input type="date" id="dob" required><br><br>
+        <label for="">Gender</label>
+        <input list="gender">   
+        <datalist id="gender">
+            <option>Male</option>
+            <option>Female</option>
+            <option>other</option>
+        </datalist> <br><br>
+        <label for="add">Address</label>
+        <input type="text"id="add"required><br><br>
+        <label for="city">city</label>
+        <input type="text"id="city" required><br><br>
+        <label for="state">state</label>
+        <input type="text"id="state"required><br><br>
+        <label for="">country</label>
+        <input list="cou">
+        <datalist id="cou">
+            <option>india</option>
+            <option>Australia</option>
+            <option>Bangladesh</option>
+            <option>china</option>
+            <option>france</option>
+            <option>other</option>
+        </datalist>
+    </fieldset>
+        <fieldset>
+            <legend>Education_Details</legend>
+            <label for="">School/University</label>
+            <input list="sname">
+            <datalist id="sname">
+                <option>PBRVITS</option>
+                <option>VEC</option>
+                <option>GIST</option>
+                <option>SVCN</option>
+                <option>other</option>
+            </datalist>
+            <label for="sname">if other,please specify name</label>
+            <input type="text" id="sname"><br><br>
+            <label for="">Department</label><br><br>
+            <input type="radio" id="CSE/IT"name="dept">
+            <label for="cse/it">CSE/IT</label>
+            <input type="radio" id="ECE"name="dept">
+            <label for="ece">ECE</label>
+            <input type="radio" id="EEE"name="dept">
+            <label for="eee">EEE</label>
+            <input type="radio" id="CIVIL"name="dept">
+            <label for="civil">CIVIL</label>
+            <input type="radio" id="MECH"name="dept">
+            <label for="mech">MECH</label>
+            <input type="radio" id="AI"name="dept">
+            <label for="AI">AI</label><br><br>
+            <label for="">year of passing</label>
+            <input list="yop">
+            <datalist id="yop">
+                <option>2020</option>
+                <option>2021</option>
+                <option>2022</option>
+                <option>2023</option>
+            </datalist><br><br>
+            <label for="">Skills</label><br><br>
+            <input type="checkbox" id="c">
+            <label for="c">C</label><br><br>
+            <input type="checkbox" id="java">
+            <label for="java">JAVA</label><br><br>
+            <input type="checkbox" id="sql">
+            <label for="sql">SQL</label><br><br>
+            <input type="checkbox" id="html">
+            <label for="html">HTML</label><br><br>
+            <input type="checkbox" id="css">
+            <label for="css">CSS</label><br><br>
+            <input type="checkbox" id="js">
+            <label for="js">JS</label>
+        </fieldset>
+        <input type="submit">
+        </form>
+        </body>
+        </html>
+    
